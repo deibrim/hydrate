@@ -18,17 +18,17 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-About.getLayout = function getLayout(page) {
+Collection.getLayout = function getLayout(page) {
   return <Layout variant="main">{page}</Layout>;
 };
 
 // ----------------------------------------------------------------------
 
-export default function About() {
+export default function Collection() {
   return (
-    <Page title="About us">
+    <Page title="Collections">
       <RootStyle>
-        <Container maxWidth="xl">About Us</Container>
+        <Container maxWidth="xl">All Collections</Container>
       </RootStyle>
     </Page>
   );

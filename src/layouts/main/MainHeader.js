@@ -81,13 +81,7 @@ export default function MainHeader() {
           {isDesktop && <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
 
           <Box sx={{ flexGrow: 1 }} />
-          <Button
-            variant="contained"
-            target="_blank"
-            rel="noopener"
-            href="https://material-ui.com/store/items/minimal-dashboard/"
-            sx={{ borderRadius: 100 }}
-          >
+          <Button variant="contained" target="_blank" rel="noopener" href="/" sx={{ borderRadius: 100 }}>
             Shop Now
           </Button>
 

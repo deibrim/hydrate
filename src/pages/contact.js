@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import Layout from '../layouts';
 // components
 import Page from '../components/Page';
+import { Container } from '@mui/material';
 // sections
 
 // ----------------------------------------------------------------------
@@ -26,7 +27,9 @@ Contact.getLayout = function getLayout(page) {
 export default function Contact() {
   return (
     <Page title="Contact us">
-      <RootStyle>Contact Us</RootStyle>
+      <RootStyle>
+        <Container maxWidth="xl">Contact Us</Container>
+      </RootStyle>
     </Page>
   );
 }
