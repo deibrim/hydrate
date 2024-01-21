@@ -22,7 +22,7 @@ const menuConfig = [
   {
     title: 'All Collection',
     icon: <Iconify icon={'eva:home-fill'} {...ICON_SIZE} />,
-    path: '/collection',
+    path: '/collections',
   },
   {
     title: 'Contact Us',
