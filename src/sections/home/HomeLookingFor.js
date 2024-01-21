@@ -18,9 +18,14 @@ const RootStyle = styled('div')(() => ({
 export default function HomeLookingFor() {
   return (
     <RootStyle>
-      <Grid container alignItems="center" justifyContent="space-between" spacing={{ xs: 8, md: 3 }}>
+      <Grid container alignItems="center" justifyContent="space-between" spacing={{ xs: 0, md: 3 }}>
         <Grid item xs={12} md={6} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-          <Stack spacing={5} justifyContent="center" alignItems="center" sx={{ textAlign: 'center' }}>
+          <Stack
+            spacing={5}
+            justifyContent="center"
+            alignItems="center"
+            sx={{ textAlign: 'center', py: { xs: 10, sm: 10, md: 0 } }}
+          >
             <m.div variants={varFade().in}>
               <Iconify icon="ph:hand-coins-fill" sx={{ width: 50, height: 50 }} />
               <br />
@@ -50,7 +55,7 @@ export default function HomeLookingFor() {
             component={m.div}
             variants={varFade().in}
             sx={{
-              mb: { xs: 3, md: 0 },
+              mb: { xs: 0, md: 0 },
             }}
           >
             <Image disabledEffect alt="rocket" src="/images/product.png" />
