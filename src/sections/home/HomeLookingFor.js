@@ -18,7 +18,6 @@ const RootStyle = styled('div')(() => ({
 export default function HomeLookingFor() {
   return (
     <RootStyle>
-      {/* <Container component={MotionViewport}> */}
       <Grid container alignItems="center" justifyContent="space-between" spacing={{ xs: 8, md: 3 }}>
         <Grid item xs={12} md={6} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
           <Stack spacing={5} justifyContent="center" alignItems="center" sx={{ textAlign: 'center' }}>
