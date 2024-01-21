@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-// import { useTransform, useScroll, useTime } from 'framer-motion';
+// hooks
+import useResponsive from '../hooks/useResponsive';
 // layouts
 import Layout from '../layouts';
 // components
@@ -19,15 +20,15 @@ HomePage.getLayout = function getLayout(page) {
 
 export default function HomePage() {
   const [offsetTop, setOffSetTop] = useState(0);
-
+  const isDesktop = useResponsive('up', 'md');
   useEffect(() => {
     window.onscroll = () => {
-      setOffSetTop(window.pageYOffset * 0.23);
+      setOffSetTop(isDesktop ? window.pageYOffset * 0.23 : window.pageYOffset * 0.13);
     };
     return () => {
       window.onscroll = null;
     };
-  }, [offsetTop]);
+  }, [offsetTop, isDesktop]);
 
   return (
     <Page title="Home">
